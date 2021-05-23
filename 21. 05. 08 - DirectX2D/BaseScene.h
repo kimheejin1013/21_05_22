@@ -10,7 +10,7 @@ public:
 
 private:
 	Player* m_Player;
-	Enemy* m_Enemy;
+	EnemyManager* m_Enemys;
 
 	bool isGameOver;
 

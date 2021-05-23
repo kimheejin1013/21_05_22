@@ -17,6 +17,8 @@ public:
 	void Update();
 	void Render();
 
+	bool IntersectRect(D2D1_RECT_F playerRc);
+
 
 };
 

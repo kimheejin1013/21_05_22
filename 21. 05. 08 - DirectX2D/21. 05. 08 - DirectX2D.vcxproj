@@ -23,6 +23,7 @@
     <ClCompile Include="BaseScene.cpp" />
     <ClCompile Include="BaseTexture.cpp" />
     <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="CollisionUtility.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyManager.cpp" />
     <ClCompile Include="GraphicRenderer.cpp" />
@@ -43,6 +44,7 @@
     <ClInclude Include="BaseSingleton.h" />
     <ClInclude Include="BaseTexture.h" />
     <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="CollisionUtility.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemyManager.h" />
     <ClInclude Include="FileUtility.h" />

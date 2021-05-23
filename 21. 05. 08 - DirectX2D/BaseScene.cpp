@@ -8,13 +8,13 @@ BaseScene::BaseScene()
 BaseScene::~BaseScene()
 {
 	SAFE_DELETE(m_Player);
-	SAFE_DELETE(m_Enemy);
+	SAFE_DELETE(m_Enemys);
 }
 
 HRESULT BaseScene::Start()
 {
 	m_Player = new Player();
-	m_Enemy = new Enemy();
+	m_Enemys = new EnemyManager();
 
 	isGameOver = false;
 
@@ -26,21 +26,18 @@ void BaseScene::Update()
 	if (isGameOver==false) {
 
 	m_Player->Update();
-	m_Enemy->Update();
-
+	m_Enemys->Update();
 	}
 
-	if (m_Enemy->IntersectRect(m_Player->GetRect()))
-	{
+	if (m_Enemys->IntersectRect(m_Player->GetRect()))
 		isGameOver = true;
-	}
+
 
 }
 
 void BaseScene::Render()
 {
 	m_Player->Render();
-	m_Enemy->Render();
+	m_Enemys->Render();
 
-	
 }

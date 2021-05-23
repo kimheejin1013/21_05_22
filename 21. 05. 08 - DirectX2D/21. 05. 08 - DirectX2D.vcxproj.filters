@@ -92,6 +92,9 @@
     <ClCompile Include="EnemyManager.cpp">
       <Filter>_Scenes\BaseScene</Filter>
     </ClCompile>
+    <ClCompile Include="CollisionUtility.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h">
@@ -147,6 +150,9 @@
     </ClInclude>
     <ClInclude Include="EnemyManager.h">
       <Filter>_Scenes\BaseScene</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionUtility.h">
+      <Filter>System</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

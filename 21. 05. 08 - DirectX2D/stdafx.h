@@ -22,6 +22,7 @@
 #define SAFE_DELETE_ARRAY(p)		{ if(p) { delete[] (p); (p) = nullptr; }}
 #define SAFE_RELEASE(p)				{ if(p) { (p)->Release(); (p) = nullptr; }}
 
+
 #if defined _DEBUG
 #pragma comment(linker, "/entry:wWinMainCRTStartup /subsystem:console")
 #include <comdef.h>

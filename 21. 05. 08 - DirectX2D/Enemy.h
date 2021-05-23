@@ -5,6 +5,7 @@ class Enemy
 	struct EnemyRect
 	{
 		D2D1_RECT_F Rect;
+		
 	
 		D2D1_RECT_F GetRect(float x, float y, float width, float height)
 		{
